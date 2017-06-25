@@ -1,0 +1,104 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix tdwgutility: <http://rs.tdwg.org/dwc/terms/attributes/>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix cv: <http://rs.tdwg.org/cv/>.
+@prefix cvdoe: <http://rs.tdwg.org/cv/doe/>.
+@prefix cvstatus: <http://rs.tdwg.org/cv/status/>.
+@prefix cvorigin: <http://rs.tdwg.org/cv/origin/>.
+@prefix cvpath: <http://rs.tdwg.org/cv/path/>.
+
+<http://www.tdwg.org/standards/x> dcterms:title "fake TDWG controlled vocabulary standard";
+     rdfs:label "fake TDWG controlled vocabulary standard";
+     dc:publisher "Biodiversity Information Standards (TDWG)";
+     dcterms:description "Placeholder standard to show how the metadata would be set up if this became part of a standard";
+     dcterms:publisher <https://www.grid.ac/institutes/grid.480498.9>;
+     dcterms:hasPart cv:;
+     a dcterms:Standard.
+
+cv:  dcterms:title "Establishment Means Controlled Vocabulary"@en;
+     rdfs:label "Establishment Means Controlled Vocabulary"@en;
+     dcterms:isPartOf <http://www.tdwg.org/standards/x>;
+     dc:contributor "Quentin Groom (Botanic Garden Meise)";
+     dc:contributor "Steve Baskauf (Vanderbilt University)";
+     dcterms:contributor <http://orcid.org/0000-0002-0596-5376>;
+     dcterms:contributor <http://orcid.org/0000-0003-4365-3135>;
+     dc:creator "some task group not yet in existence";
+     dcterms:description "This vocabulary is under development to provide controlled vocabulary values for possible future Darwin Core terms that may extend or replace establishmentMeans."@en;
+     dcterms:bibliographicCitation "placeholder for a future citation";
+     rdfs:comment "Draft; not part of any TDWG standard"@en;
+     dcterms:license <http://creativecommons.org/licenses/by/4.0/>;
+     dcterms:hasPart cvdoe:;
+     a tdwgutility:Vocabulary.
+
+cvdoe: rdfs:label "Degree of Establishment Controlled Vocabulary Term List"@en;
+     dcterms:title "Degree of Establishment Controlled Vocabulary Term List"@en;
+     rdfs:comment "This is a controlled vocabulary whose terms are intended to be used as values for a proposed Darwin Core term dwc:degreeOfEstablishment/dwciri:degreeOfEstablishment."@en;
+     skos:note "This is a controlled vocabulary whose terms are intended to be used as values for a proposed Darwin Core term dwc:degreeOfEstablishment/dwciri:degreeOfEstablishment."@en;
+     vann:preferredNamespacePrefix "cvdoe";
+     vann:preferredNamespaceUri "http://rs.tdwg.org/cv/doe/";
+     skos:hasTopConcept cvdoe:A;
+     skos:hasTopConcept cvdoe:B;
+     skos:hasTopConcept cvdoe:C;
+     skos:hasTopConcept cvdoe:D;
+     skos:hasTopConcept cvdoe:E;
+     dcterms:isPartOf cv:;
+     dcterms:modified "2017-04-06"^^xsd:date;
+     rdfs:comment "For each term in this list, the controlled value (rdf:value), and definition (rdfs:comment) are normative.  Labels (rdfs:label) and comments (dcterms:description) are non-normative.";
+     a skos:ConceptScheme,tdwgutility:TermList.
+
+cvstatus: rdfs:label "Occurrence Status Controlled Vocabulary Term List"@en;
+     dcterms:title "Occurrence Status Controlled Vocabulary Term List"@en;
+     rdfs:comment "This is a controlled vocabulary whose terms are intended to be used as values for a proposed Darwin Core term dwc:occurrenceStatus/dwciri:occurrenceStatus."@en;
+     skos:note "This is a controlled vocabulary whose terms are intended to be used as values for a proposed Darwin Core term dwc:occurrenceStatus/dwciri:occurrenceStatus."@en;
+     vann:preferredNamespacePrefix "cvstatus";
+     vann:preferredNamespaceUri "http://rs.tdwg.org/cv/status/";
+     skos:hasTopConcept cvstatus:extant;
+     skos:hasTopConcept cvstatus:pextant;
+     skos:hasTopConcept cvstatus:pextinct;
+     skos:hasTopConcept cvstatus:extinct;
+     skos:hasTopConcept cvstatus:uncertain;
+     skos:hasTopConcept cvstatus:absent;
+     dcterms:isPartOf cv:;
+     dcterms:modified "2017-04-06"^^xsd:date;
+     rdfs:comment "For each term in this list, the controlled value (rdf:value), and definition (rdfs:comment) are normative.  Labels (rdfs:label) and comments (dcterms:description) are non-normative.";
+     a skos:ConceptScheme,tdwgutility:TermList.
+
+cvorigin: rdfs:label "Origin Controlled Vocabulary Term List"@en;
+     dcterms:title "Origin Controlled Vocabulary Term List"@en;
+     rdfs:comment "This is a controlled vocabulary whose terms are intended to be used as values for a proposed Darwin Core term dwc:origin/dwciri:origin."@en;
+     skos:note "This is a controlled vocabulary whose terms are intended to be used as values for a proposed Darwin Core term dwc:origin/dwciri:origin."@en;
+     vann:preferredNamespacePrefix "cvorigin";
+     vann:preferredNamespaceUri "http://rs.tdwg.org/cv/origin/";
+     skos:hasTopConcept cvorigin:native;
+     skos:hasTopConcept cvorigin:introduced;
+     skos:hasTopConcept cvorigin:unknown;
+     dcterms:isPartOf cv:;
+     dcterms:modified "2017-04-06"^^xsd:date;
+     rdfs:comment "For each term in this list, the controlled value (rdf:value), and definition (rdfs:comment) are normative.  Labels (rdfs:label) and comments (dcterms:description) are non-normative.";
+     a skos:ConceptScheme,tdwgutility:TermList.
+
+cvpath: rdfs:label "Pathway Controlled Vocabulary Term List"@en;
+     dcterms:title "Pathway Controlled Vocabulary Term List"@en;
+     rdfs:comment "This is a controlled vocabulary whose terms are intended to be used as values for the Darwin Core term dwc:establishmentMeans/dwciri:establishmentMeans."@en;
+     skos:note "This is a controlled vocabulary whose terms are intended to be used as values for the Darwin Core term dwc:establishmentMeans/dwciri:establishmentMeans."@en;
+     vann:preferredNamespacePrefix "cvpath";
+     vann:preferredNamespaceUri "http://rs.tdwg.org/cv/path/";
+     skos:hasTopConcept cvpath:100;
+     skos:hasTopConcept cvpath:101;
+     skos:hasTopConcept cvpath:102;
+     skos:hasTopConcept cvpath:111;
+     skos:hasTopConcept cvpath:124;
+     skos:hasTopConcept cvpath:135;
+     skos:hasTopConcept cvpath:147;
+     skos:hasTopConcept cvpath:150;
+     dcterms:isPartOf cv:;
+     dcterms:modified "2017-04-06"^^xsd:date;
+     rdfs:comment "For each term in this list, the controlled value (rdf:value), and definition (rdfs:comment) are normative.  Labels (rdfs:label) and comments (dcterms:description) are non-normative.";
+     a skos:ConceptScheme,tdwgutility:TermList.
+

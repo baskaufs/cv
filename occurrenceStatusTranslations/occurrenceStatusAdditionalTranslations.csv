@@ -1,0 +1,10 @@
+"prefLabel_en","definition_en","prefLabel_en","definition_en"
+"extant","The species is known or thought very likely to occur presently in the area, which encompasses localities with current or recent (last 20-30 years) records where suitable habitat at appropriate altitudes remains.",,
+"possibly extant","There is no record of the species in the area, but the species may possibly occur.",,
+"possibly extinct","The species was formerly known or thought very likely to occur in the area, but it has been confirmed that the species no longer occurs because exhaustive searches have failed to produce recent records, and the intensity and timing of threats could plausibly have extirpated the taxon.",,
+"extinct post 1500","The species was formerly known or thought very likely to occur in the area (post 1500 AD), but it has been confirmed that the species no longer occurs because exhaustive searches have failed to produce recent records, and the intensity and timing of threats could plausibly have extirpated the taxon.",,
+"extinct","The species was formerly known or thought very likely to occur in the area, but it has been confirmed that the species no longer occurs because exhaustive searches have failed to produce recent records, and the intensity and timing of threats could plausibly have extirpated the taxon.",,
+"presence uncertain","A record exists of the species' presence in the area, but this record requires verification or is rendered questionable owing to uncertainty over the identity or authenticity of the record, or the accuracy of the location.",,
+"absent","Not present in a place at an occasion",,
+"no value given","Record did not include a value",,
+"inappropriate","Record included a value that was inappropriate for the occurrenceStatus property",,
