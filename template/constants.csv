@@ -1,2 +1,2 @@
 domainRoot,coreClassFile,documentClass,creator,outputDirectory,outFileNameAfter,separator,baseIriColumn,modifiedColumn
-http://rs.tdwg.org/lbp/concepts/,template.csv,foaf:Document,Biodiversity Information Standards (TDWG),c:\Dropbox\tdwg\establishment-means\occurrenceStatus\,,",",localIdentifier,modified
+http://rs.tdwg.org/lbp/concepts/,template.csv,foaf:Document,Biodiversity Information Standards (TDWG),c:\Dropbox\tdwg\establishment-means\occurrenceStatus\,,",",term_localName,modified
